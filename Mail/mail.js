@@ -12,7 +12,11 @@ const mailList = [
     "spazzolini.sui@denti.com"
 ]
 
-console.log (mailList)
+console.log ("Mail che vanno bene per accedere: ")
+
+for (let i = 0 ; i < mailList.length ; i++) {
+    console.log ( (i + 1) + ". " + mailList[i])
+}
 
 const mailUtente = prompt ("Inserisci la tua e-mail per accedere")
 let accessoEseguito = false
